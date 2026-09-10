@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Research | Chiara Notarangelo</title>
+
+    <style>
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #FAFCFA;
+            color: #222222;
+        }
+
+        /* NAVIGATION */
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px 8%;
+            background: #FFFFFF;
+            border-bottom: 1px solid #DCE7E0;
+        }
+
+        .name {
+            font-size: 22px;
+            font-weight: 600;
+            color: #29483A;
+        }
+
+        .menu a {
+            margin-left: 28px;
+            text-decoration: none;
+            color: #333333;
+            font-size: 16px;
+            transition: color 0.2s ease;
+        }
+
+        .menu a:hover {
+            color: #3F6654;
+        }
+
+        /* MAIN CONTENT */
+
+        .container {
+            max-width: 950px;
+            margin: 70px auto;
+            padding: 0 30px;
+        }
+
+        h1 {
+            font-size: 40px;
+            color: #29483A;
+            margin-bottom: 45px;
+        }
+
+        h2 {
+            font-size: 26px;
+            color: #29483A;
+            margin-bottom: 30px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #DCE7E0;
+        }
+
+        /* PAPER */
+
+        .paper {
+            margin-bottom: 42px;
+        }
+
+        .paper-title {
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 1.4;
+            margin-bottom: 8px;
+        }
+
+        .authors {
+            font-size: 16px;
+            color: #555555;
+            margin-bottom: 6px;
+        }
+
+        .status {
+            font-size: 15px;
+            font-style: italic;
+            color: #5B6F64;
+            margin-bottom: 12px;
+        }
+
+        /* ABSTRACT BUTTON */
+
+        .abstract-button {
+            display: inline-block;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            color: #3F6654;
+            margin-top: 5px;
+        }
+
+        .abstract-button:hover {
+            text-decoration: underline;
+        }
+
+        /* ABSTRACT TEXT */
+
+        .abstract {
+            display: none;
+            margin-top: 15px;
+            padding: 18px 20px;
+            background: #F0F6F2;
+            border-left: 4px solid #7D9E8B;
+            border-radius: 4px;
+            font-size: 15px;
+            line-height: 1.65;
+            text-align: justify;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            margin-top: 60px;
+            border-top: 1px solid #DCE7E0;
+            color: #6D7D74;
+            font-size: 14px;
+        }
+
+        @media (max-width: 750px) {
+
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .menu a {
+                margin: 0 10px;
+            }
+
+            .container {
+                margin: 45px auto;
+            }
+
+            h1 {
+                font-size: 34px;
+            }
+
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+    <nav>
+
+        <div class="name">
+            Chiara Notarangelo
+        </div>
+
+        <div class="menu">
+            <a href="index.html">Home</a>
+            <a href="research.html">Research</a>
+            <a href="teaching.html">Teaching</a>
+            <a href="cv.html">CV</a>
+        </div>
+
+    </nav>
+
+
+    <main class="container">
+
+        <h1>Research</h1>
+
+        <h2>Working Papers</h2>
+
+
+        <!-- PAPER 1 -->
+
+        <div class="paper">
+
+            <div class="paper-title">
+                After the Draft: The Lasting Effects of Male Conscription on Well-Being
+            </div>
+
+            <div class="authors">
+                Chiara Notarangelo
+            </div>
+
+            <div class="status">
+                R&amp;R at Economica
+            </div>
+
+            <div class="abstract-button"
+                 onclick="toggleAbstract('abstract1', this)">
+                ABSTRACT
+            </div>
+
+            <div id="abstract1" class="abstract">
+
+                I study the effects of compulsory military service on mental health by exploiting
+                the 2005 suspension of conscription in Italy. Using individual-level health survey
+                data, I implement a regression discontinuity design around the birth-cohort cutoff
+                separating the last conscripted cohort from the first fully exempted one.
+                Men exposed to compulsory service report significantly worse psychological and
+                mental health, are less likely to feel calm, and are more likely to smoke.
+                These effects are robust across non-parametric, parametric, and discrete
+                specifications.
+
+                <br><br>
+
+                I also provide evidence of relative comparison effects across adjacent cohorts,
+                which may amplify—but do not fully account for—the observed discontinuities.
+                I further document spillover effects within households: cohabiting relatives of
+                exposed men exhibit lower psychological wellbeing and a higher propensity to smoke,
+                consistent with stress transmission mechanisms.
+
+                <br><br>
+
+                Finally, using data on causes of death (2000–2021), a difference-in-differences
+                design shows that suicide rates among young men aged 20–24 declined
+                disproportionately in low-education provinces. Since university students could
+                defer service, the reform equalized exposure between students and non-students.
+                No effects emerge for armed forces personnel, women, or other age groups.
+
+                <br><br>
+
+                Overall, even short-term compulsory service in peacetime generated persistent
+                adverse effects on mental health and family wellbeing.
+
+            </div>
+
+        </div>
+
+
+        <!-- PAPER 2 -->
+
+        <div class="paper">
+
+            <div class="paper-title">
+                Advancing Social Life Cycle Assessment in Healthcare Waste Management through
+                Complementary Methodologies: A Scoping Review
+            </div>
+
+            <div class="authors">
+                Chiara Notarangelo
+            </div>
+
+            <div class="status">
+                R&amp;R at Journal of Environmental Management
+            </div>
+
+            <div class="abstract-button"
+                 onclick="toggleAbstract('abstract2', this)">
+                ABSTRACT
+            </div>
+
+            <div id="abstract2" class="abstract">
+
+                Healthcare Waste Management (HCWM) represents a critical intersection of
+                environmental, economic, and social challenges, particularly given the sector's
+                exponential growth during and after the COVID-19 pandemic. Despite significant
+                advancements in assessing environmental and economic dimensions, the social
+                implications of HCWM remain under-explored.
+
+                <br><br>
+
+                Social Life Cycle Assessment (SLCA) has emerged as a complementary tool to address
+                these gaps, yet its application in HCWM is limited by methodological constraints
+                and under-representation in the literature. This scoping review, guided by the
+                PRISMA-ScR protocol, aims to bridge this gap by investigating how complementary
+                methodologies can enhance SLCA's application in HCWM through the analysis of
+                88 peer-reviewed studies.
+
+                <br><br>
+
+                The findings reveal significant variations in the focus on different SLCA
+                subcategories. Subcategories such as Workers’ Health and Safety and Social
+                Benefits/Social Security are frequently analysed, reflecting their relevance
+                across diverse contexts. However, other critical social subcategories, including
+                child labour and corruption, are either neglected or barely addressed,
+                underscoring gaps in the current body of literature.
+
+                <br><br>
+
+                The review highlights the need for tailored SLCA frameworks that incorporate
+                complementary methodologies, regional contexts, and active stakeholder engagement
+                to bridge these gaps and improve the comprehensiveness of social impact assessments
+                in HCWM. By advancing SLCA practices and aligning them with global sustainability
+                goals, this study provides actionable insights for policymakers and researchers
+                aiming to develop sustainable and equitable HCWM systems.
+
+            </div>
+
+        </div>
+
+
+        <!-- PAPER 3 -->
+
+        <div class="paper">
+
+            <div class="paper-title">
+                I Don’t Care. Engaging Adolescents for Digital Health Tools Improvement
+            </div>
+
+            <div class="authors">
+                Chiara Notarangelo, Moschetti, F. Quattrone, S. Nuti, Pennucci, F.
+            </div>
+
+            <div class="status">
+                Submitted
+            </div>
+
+            <div class="abstract-button"
+                 onclick="toggleAbstract('abstract3', this)">
+                ABSTRACT
+            </div>
+
+            <div id="abstract3" class="abstract">
+
+                Digital Health Tools (DHT) are increasingly recognised as key instruments for
+                improving healthcare access, prevention, and patient engagement. However,
+                adolescents remain underrepresented in the adoption of institutional digital
+                health platforms, and little is known about the factors shaping their engagement.
+
+                <br><br>
+
+                This study investigates adolescents’ awareness, expectations, and perceptions of
+                DHT through a pilot intervention involving 181 high-school students from inner
+                areas of Tuscany, Italy. Participants first completed a baseline questionnaire
+                assessing digital health literacy and attitudes toward DHT. They were then invited
+                to participate in an incentive-based challenge designed to encourage use of the
+                Italian Electronic Health Record (Fascicolo Sanitario Elettronico, FSE), followed
+                by a comparative evaluation of the FSE and a WebApp, co-designed with adolescents,
+                using the Mobile App Rating Scale (MARS).
+
+                <br><br>
+
+                Baseline findings reveal limited familiarity with institutional DHT despite
+                generally positive attitudes toward digital technologies and high expectations
+                regarding usability, accessibility, and privacy. Notably, the incentive-based
+                intervention failed to generate any participation, suggesting that external
+                rewards alone are insufficient to overcome motivational and administrative
+                barriers.
+
+                <br><br>
+
+                Comparative evaluations indicate complementary strengths: the WebApp was perceived
+                as more engaging, aesthetically appealing, and easier to use, whereas the FSE
+                scored higher in credibility and informational authority. The findings suggest
+                that successful adolescent engagement with digital health requires the integration
+                of participatory design, institutional trust, reduced administrative burden,
+                and interventions aimed at strengthening digital health literacy.
+
+            </div>
+
+        </div>
+
+
+        <!-- PAPER 4 -->
+
+        <div class="paper">
+
+            <div class="paper-title">
+                “Beeyond” Willingness To Pay: On the Perception of Honeybees’ Worth in the Italian Landscape
+            </div>
+
+            <div class="authors">
+                Chiara Notarangelo, A. Carrozzo Magli
+            </div>
+
+            <div class="status">
+                Submitted
+            </div>
+
+            <div class="abstract-button"
+                 onclick="toggleAbstract('abstract4', this)">
+                ABSTRACT
+            </div>
+
+            <div id="abstract4" class="abstract">
+
+                Employing a game-theoretic model, we find that agents’ Willingness To Pay (WTP)
+                to preserve an environmental service diminishes as their perceived expected
+                environmental damage increases, even though it rises with their wealth and
+                altruistic tendencies.
+
+                <br><br>
+
+                This result contradicts standard predictions, which rely on two key assumptions:
+                the absence of strategic interactions and a binary choice between paying to
+                completely avoid environmental loss or bear its consequences.
+
+                <br><br>
+
+                To empirically validate our theoretical predictions, we conducted an original
+                survey assessing the valuation of Italian honeybees, a critical bioindicator
+                recently impacted by climate change and invasive species. Additionally, we
+                leveraged data from the European Social Survey to reinforce the robustness of
+                our findings, instrumenting the perceived risk of future environmental hazards
+                with the interaction between historical variations in average temperatures
+                since the 1960s and individuals’ beliefs about the risk of power cuts.
+
+                <br><br>
+
+                Our results challenge previous hypotheses and findings on the relationship between
+                environmental awareness, risk perception, and WTP for environmental preservation,
+                with important implications for sustainability initiatives based on the paradigm
+                of ecological transition.
+
+            </div>
+
+        </div>
+
+
+    </main>
+
+
+    <footer>
+        © 2026 Chiara Notarangelo
+    </footer>
+
+
+    <script>
+
+        function toggleAbstract(id, button) {
+
+            const abstract = document.getElementById(id);
+
+            if (abstract.style.display === "block") {
+                abstract.style.display = "none";
+                button.innerHTML = "ABSTRACT";
+            } else {
+                abstract.style.display = "block";
+                button.innerHTML = "CLOSE ABSTRACT";
+            }
+
+        }
+
+    </script>
+
+
+</body>
+</html>
