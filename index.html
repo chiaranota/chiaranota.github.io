@@ -9,133 +9,230 @@
 
     <style>
         body {
-            font-family: Arial, Helvetica, sans-serif;
             margin: 0;
-            background-color: #ffffff;
-            color: #333333;
-            line-height: 1.6;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #fafafa;
+            color: #222;
         }
 
         nav {
-            max-width: 950px;
-            margin: 0 auto;
-            padding: 30px 25px;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            border-bottom: 1px solid #eeeeee;
+            padding: 25px 8%;
+            background: white;
+            border-bottom: 1px solid #e6e6e6;
         }
 
         .name {
-            font-size: 20px;
-            font-weight: bold;
+            font-size: 22px;
+            font-weight: 600;
         }
 
-        nav a {
-            color: #333333;
+        .menu a {
+            margin-left: 28px;
             text-decoration: none;
-            margin-left: 25px;
+            color: #333;
+            font-size: 16px;
         }
 
-        nav a:hover {
-            color: #7b3f61;
+        .menu a:hover {
+            color: #8b6f47;
         }
 
-        .container {
-            max-width: 850px;
+        .hero {
+            max-width: 1050px;
             margin: 80px auto;
-            padding: 0 25px;
+            padding: 0 30px;
+
+            display: grid;
+            grid-template-columns: 320px 1fr;
+            gap: 70px;
+            align-items: center;
+        }
+
+        .profile img {
+            width: 100%;
+            aspect-ratio: 4 / 5;
+            object-fit: cover;
+            border-radius: 18px;
         }
 
         h1 {
             font-size: 42px;
-            margin-bottom: 5px;
+            margin-bottom: 10px;
+            font-weight: 600;
         }
 
         .position {
-            font-size: 20px;
-            color: #666666;
-            margin-top: 0;
-            margin-bottom: 40px;
+            font-size: 21px;
+            color: #666;
+            margin-bottom: 30px;
         }
 
         .bio {
-            max-width: 700px;
             font-size: 18px;
+            line-height: 1.7;
+            max-width: 650px;
         }
 
-        .links {
+        .interests {
             margin-top: 35px;
         }
 
-        .links a {
-            color: #7b3f61;
-            text-decoration: none;
-            margin-right: 20px;
+        .interests h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
         }
 
-        .links a:hover {
-            text-decoration: underline;
+        .tags span {
+            display: inline-block;
+            margin: 6px 8px 0 0;
+            padding: 8px 14px;
+            background: #ece7df;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+
+        .contact {
+            margin-top: 35px;
+            font-size: 16px;
+        }
+
+        .contact a {
+            color: #8b6f47;
+            text-decoration: none;
+        }
+
+        .contact p {
+            margin: 8px 0;
         }
 
         footer {
-            max-width: 850px;
-            margin: 100px auto 30px;
-            padding: 20px 25px;
-            border-top: 1px solid #eeeeee;
-            color: #888888;
+            text-align: center;
+            padding: 30px;
+            margin-top: 50px;
+            border-top: 1px solid #e6e6e6;
+            color: #777;
             font-size: 14px;
         }
+
+        @media (max-width: 750px) {
+
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .menu a {
+                margin: 0 10px;
+            }
+
+            .hero {
+                grid-template-columns: 1fr;
+                gap: 35px;
+                margin: 45px auto;
+            }
+
+            .profile {
+                max-width: 280px;
+                margin: auto;
+            }
+
+            h1 {
+                font-size: 34px;
+            }
+
+        }
+
     </style>
+
 </head>
+
 
 <body>
 
     <nav>
-        <div class="name">Chiara Notarangelo</div>
 
-        <div>
-            <a href="index.html">About</a>
+        <div class="name">
+            Chiara Notarangelo
+        </div>
+
+        <div class="menu">
+            <a href="index.html">Home</a>
             <a href="research.html">Research</a>
             <a href="teaching.html">Teaching</a>
             <a href="cv.html">CV</a>
         </div>
+
     </nav>
 
-    <main class="container">
 
-        <h1>Chiara Notarangelo, PhD</h1>
+    <main class="hero">
 
-        <p class="position">
-            Postdoctoral Fellow at the University of Florence
-        </p>
-
-        <div class="bio">
-            <p>
-                Fighting against unfairness through my research,
-                to the best of my knowledge.
-            </p>
-
-            <p>
-                Vegetarian. Mental-health supporter.
-                Lover of handmade in all its forms.
-            </p>
+        <div class="profile">
+            <img src="profile.jpeg" alt="Chiara Notarangelo">
         </div>
 
-        <div class="links">
+        <div>
 
-            <a href="mailto:chiara.notarangelo6@unibo.it">
-                Email
-            </a>
+            <h1>Chiara Notarangelo, PhD</h1>
 
-            <a href="https://orcid.org/0009-0007-8669-7724"
-               target="_blank">
-                ORCID
-            </a>
+            <div class="position">
+                Postdoctoral Fellow at the University of Florence
+            </div>
+
+            <div class="bio">
+
+                <p>
+                    Fighting unfairness through my research,
+                    to the best of my knowledge.
+                </p>
+
+                <p>
+                    Vegetarian. Mental-health supporter.
+                    Lover of handmade crafts in all their forms.
+                </p>
+
+            </div>
+
+            <div class="interests">
+
+                <h2>Research Interests</h2>
+
+                <div class="tags">
+                    <span>Health Economics</span>
+                    <span>Environmental resources</span>
+                    <span>Mental Health</span>
+                    <span>Social Statistics</span>
+                </div>
+
+            </div>
+
+
+            <div class="contact">
+
+                <p>
+                    <strong>Email</strong><br>
+                    <a href="mailto:chiara.notarangelo@unifi.it">
+                        chiara.notarangelo@unifi.it
+                    </a>
+                </p>
+
+                <p>
+                    <strong>ORCID</strong><br>
+                    <a href="https://orcid.org/0009-0007-8669-7724"
+                       target="_blank">
+                        0009-0007-8669-7724
+                    </a>
+                </p>
+
+            </div>
 
         </div>
 
     </main>
+
 
     <footer>
         © 2026 Chiara Notarangelo
