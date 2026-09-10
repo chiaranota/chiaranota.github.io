@@ -3,42 +3,50 @@
 
 <head>
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Chiara Notarangelo | Academic Website</title>
 
     <style>
+
         body {
             margin: 0;
             font-family: Arial, Helvetica, sans-serif;
-            background: #fafafa;
-            color: #222;
+            background: #FAFCFA;
+            color: #222222;
         }
+
+        /* NAVIGATION */
 
         nav {
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 25px 8%;
-            background: white;
-            border-bottom: 1px solid #e6e6e6;
+            background: #FFFFFF;
+            border-bottom: 1px solid #DCE7E0;
         }
 
         .name {
             font-size: 22px;
             font-weight: 600;
+            color: #29483A;
         }
 
         .menu a {
             margin-left: 28px;
             text-decoration: none;
-            color: #333;
+            color: #333333;
             font-size: 16px;
+            transition: color 0.2s ease;
         }
 
         .menu a:hover {
-            color: #8b6f47;
+            color: #3F6654;
         }
+
+        /* MAIN SECTION */
 
         .hero {
             max-width: 1050px;
@@ -51,22 +59,29 @@
             align-items: center;
         }
 
+        /* PROFILE PHOTO */
+
         .profile img {
             width: 100%;
             aspect-ratio: 4 / 5;
             object-fit: cover;
             border-radius: 18px;
+            box-shadow: 0 8px 25px rgba(41, 72, 58, 0.12);
         }
+
+        /* TEXT */
 
         h1 {
             font-size: 42px;
+            margin-top: 0;
             margin-bottom: 10px;
             font-weight: 600;
+            color: #29483A;
         }
 
         .position {
             font-size: 21px;
-            color: #666;
+            color: #5B6F64;
             margin-bottom: 30px;
         }
 
@@ -76,6 +91,8 @@
             max-width: 650px;
         }
 
+        /* RESEARCH INTERESTS */
+
         .interests {
             margin-top: 35px;
         }
@@ -83,39 +100,51 @@
         .interests h2 {
             font-size: 20px;
             margin-bottom: 10px;
+            color: #29483A;
         }
 
         .tags span {
             display: inline-block;
             margin: 6px 8px 0 0;
             padding: 8px 14px;
-            background: #ece7df;
+            background: #E3EEE7;
+            color: #29483A;
             border-radius: 20px;
             font-size: 14px;
         }
+
+        /* CONTACT */
 
         .contact {
             margin-top: 35px;
             font-size: 16px;
         }
 
+        .contact p {
+            margin: 12px 0;
+        }
+
         .contact a {
-            color: #8b6f47;
+            color: #3F6654;
             text-decoration: none;
         }
 
-        .contact p {
-            margin: 8px 0;
+        .contact a:hover {
+            text-decoration: underline;
         }
+
+        /* FOOTER */
 
         footer {
             text-align: center;
             padding: 30px;
             margin-top: 50px;
-            border-top: 1px solid #e6e6e6;
-            color: #777;
+            border-top: 1px solid #DCE7E0;
+            color: #6D7D74;
             font-size: 14px;
         }
+
+        /* MOBILE */
 
         @media (max-width: 750px) {
 
@@ -149,7 +178,6 @@
 
 </head>
 
-
 <body>
 
     <nav>
@@ -174,6 +202,7 @@
             <img src="profile.jpeg" alt="Chiara Notarangelo">
         </div>
 
+
         <div>
 
             <h1>Chiara Notarangelo, PhD</h1>
@@ -181,6 +210,7 @@
             <div class="position">
                 Postdoctoral Fellow at the University of Florence
             </div>
+
 
             <div class="bio">
 
@@ -196,15 +226,17 @@
 
             </div>
 
+
             <div class="interests">
 
                 <h2>Research Interests</h2>
 
                 <div class="tags">
                     <span>Health Economics</span>
-                    <span>Resource economics</span>
+                    <span>Political Economy</span>
                     <span>Mental Health</span>
-                    <span>Social Statistics</span>
+                    <span>Applied Microeconomics</span>
+                    <span>Gender Economics</span>
                 </div>
 
             </div>
@@ -214,8 +246,8 @@
 
                 <p>
                     <strong>Email</strong><br>
-                    <a href="mailto:chiara.notarangelo@unifi.it">
-                        chiara.notarangelo@unifi.it
+                    <a href="mailto:chiara.notarangelo6@unibo.it">
+                        chiara.notarangelo6@unibo.it
                     </a>
                 </p>
 
